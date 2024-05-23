@@ -379,7 +379,7 @@ body {
 
 .footer-subscription button {
     padding: 10px 20px;
-    background-color: #1a73e8;
+    background-color: #008A16;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -387,8 +387,9 @@ body {
 }
 
 .footer-subscription button:hover {
-    background-color: #135bb5;
+    background-color: #008A16;
 }
+
 
 .footer-subscription .subscription-text {
     font-size: 12px;
