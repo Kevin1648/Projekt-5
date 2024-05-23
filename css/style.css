@@ -104,7 +104,12 @@ body {
 }
 
 .navigation ul li a:hover {
-    text-decoration: underline;
+    border-bottom: 4px solid #30DA67;
+}
+
+
+.navigation ul li a.active {
+    border-bottom: 4px solid #30DA67;
 }
 
 .hero {
