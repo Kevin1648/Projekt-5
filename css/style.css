@@ -15,15 +15,20 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    padding: 0; /* Ensure no padding around the header container */
+}
+
+.logo {
+    margin: 0; /* Remove any margin around the logo */
+    display: flex; /* Ensure the logo is aligned to the left */
+    align-items: center; /* Align items vertically center */
 }
 
 .logo img {
-    height: 60px;   
-}
-
-.impact-logo img {
-    height: 40px;
-    margin-left: 20px;
+    height: 60px;
+    margin: 0; /* Ensure no margin around the image */
+    padding: 0; /* Ensure no padding around the image */
+    display: block; /* Ensure the image is displayed as a block element */
 }
 
 .search-bar {
@@ -67,6 +72,7 @@ body {
 .navigation ul li {
     display: inline;
     margin-right: 20px;
+    position: relative;
 }
 
 .navigation ul li a {
@@ -75,16 +81,28 @@ body {
     font-size: 16px;
 }
 
+.navigation ul li a::after {
+    content: ' ▼';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
 .navigation ul li a:hover {
     text-decoration: underline;
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px; /* Increase the height */
     background-image: url('by.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
 .hero h1 {
@@ -107,14 +125,14 @@ body {
 
 .features {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 20px;
-    background-color: #e9ecef;
+    background-color: #fff;
+    gap: 30px; /* Sæt afstanden mellem elementerne til 30px */
 }
 
 .feature {
     text-align: center;
-    margin: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -123,7 +141,7 @@ body {
 }
 
 .features img {
-    width: 250px;
+    width: 350px; /* Øget billedstørrelse */
 }
 
 .selected-products {
@@ -190,11 +208,12 @@ body {
 .important-links {
     padding: 40px;
     background-color: #f8f9fa;
-    text-align: center;
+    text-align: left;
 }
 
 .important-links h2 {
     margin-bottom: 20px;
+
 }
 
 .mission-statement {
@@ -202,8 +221,8 @@ body {
     font-size: 16px;
     color: #333;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+
+    text-align: left;
 }
 
 .links-grid {
@@ -262,7 +281,7 @@ body {
 }
 
 .footer-column ul li {
-    margin-bottom: 5px;
+    margin-bottom: 15px; /* Øg mellemrummet endnu mere */
     font-size: 14px;
     cursor: pointer;
 }
@@ -271,14 +290,25 @@ body {
     text-decoration: underline;
 }
 
+.footer-column .arrow {
+    color: green;
+    margin-left: 5px;
+}
+
 .footer-subscription {
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
+    max-width: 600px; /* Sæt en breddebegrænsning */
+}
+
+.footer-subscription .subscription-header {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .footer-subscription form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 10px;
 }
 
@@ -304,9 +334,11 @@ body {
     background-color: #135bb5;
 }
 
-.footer-subscription p {
+.footer-subscription .subscription-text {
     font-size: 12px;
     color: #ccc;
+    margin-top: 10px;
+    line-height: 1.5; /* Sæt linjeafstand for bedre læsbarhed */
 }
 
 .footer-bottom {
@@ -334,5 +366,21 @@ body {
 }
 
 .footer-logo img {
+    height: 40px;
+}
+
+.footer-social-impact {
+    display: flex;
+    flex-direction: column; /* Stacked vertically */
+    align-items: center;
+}
+
+.footer-social {
+    margin-top: 30px; /* Add margin to position 30px below the Impact logo */
+    display: flex;
+    gap: 10px; /* Adjust gap between social icons */
+}
+
+.impact-logo img {
     height: 40px;
 }
