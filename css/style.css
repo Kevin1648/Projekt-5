@@ -114,7 +114,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 500px; /* Increase the height */
-    background-image: url('by.jpg');
+    background-image: url(../billeder/by.jpg);
     background-size: cover;
     background-position: center;
     color: white;
