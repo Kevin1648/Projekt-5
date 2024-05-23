@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Hjemmeside</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="w.ico" type="image/x-icon">
+    <script src="chat.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -15,19 +17,19 @@
             <div class="search-bar">
                 <input type="text" placeholder="Søg...">
                 <button><img src="search.png" alt="Søg"></button>
-                <div class="impact-logo">
-                    <img src="images 4.png" alt="Impact Company Logo">
-                </div>
+            </div>
+            <div class="impact-logo">
+                <img src="images 4.png" alt="Impact Company Logo">
             </div>
         </div>
         <nav class="navigation">
-            <ul>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Løsninger</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Løsninger</a></li>
+            <li><a href="#" class="active">Support</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
         </nav>
     </header>
     <main>
@@ -99,6 +101,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- GRID -->
+        <section class="grid-layout">
+            <div class="grid-item" style="background-image: url('billeder/Group\ 20.png');">
+                <span>Bæredygtighed</span>
+            </div>
+            <div class="grid-item" style="background-image: url('billeder/Group\ 19.png');">
+                <span>Software</span>
+            </div>
+            <div class="grid-item" style="background-image: url('billeder/Group\ 18.png');">
+                <span>Services</span>
+            </div>
+            <div class="grid-item" style="background-image: url('billeder/Group\ 21.png');">
+                <span>Sundhedssektoren</span>
+            </div>
+            <div class="grid-item" style="background-image: url('billeder/Group\ 22.png');">
+                <span>Føde- og drikkevarer</span>
+            </div>
+            <div class="grid-item" style="background-image: url('billeder/Group\ 23.png');">
+                <span>Datacentre</span>
+            </div>
+        </section>
+
+
     </main>
     <footer class="site-footer">
         <div class="footer-top">
@@ -177,5 +203,57 @@
             </div>
         </div>
     </footer>
+
+     <!-- CHAT BOT -->
+
+     <div id="chat-icon" class="chat-icon">
+        <img src="billeder/chatbot.png" alt="Chat Icon">
+    </div>
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <span>B2B Support</span>
+            <button id="close-chat" class="close-btn">&times;</button>
+        </div>
+        <div class="chat-body">
+            <button id="start-chat" class="start-chat-btn">Snak med os</button>
+            <div id="chat-options" class="chat-options">
+                <ul>
+                    <li><a href="#">Produktvælger</a></li>
+                    <li><a href="#">Produktsubstitution</a></li>
+                    <li><a href="#">Ofte stillede spørgsmål</a></li>
+                    <li><a href="#">Dokument og software download</a></li>
+                </ul>
+                <div class="order-inquiry">
+                    <p>Spørgsmål om din ordre?</p>
+                    <button class="login-btn">Log på</button>
+                    <p>Opret en konto i dag til personlig support med vores team af eksperter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <span>B2B Support</span>
+            <button id="close-chat-window" class="close-btn">&times;</button>
+        </div>
+        <div class="chat-messages">
+            <div class="message">
+                <div class="message-sender">Kundesupport</div>
+                <div class="message-text">Hej hvordan kan jeg hjælpe dig?</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-sender">Dig</div>
+                <div class="message-text">Har et problem med FUGA</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-sender">Dig</div>
+                <div class="message-text">Hvor mange watt kan det klare?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-field" placeholder="Skriv en besked...">
+            <button id="send-chat-btn">Send</button>
+        </div>
+    </div>
 </body>
 </html>
