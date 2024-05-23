@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kundeservice</title>
     <link rel="stylesheet" href="css/support.css">
+    <link rel="icon" href="w.ico" type="image/x-icon">
+    <script src="chat.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="top-links">
-                <a href="#">Produkter</a>
-                <a href="#">Service</a>
-                <a href="#">Kontakt</a>
-            </div>
+
+<!-- HEADER -->
+
+  <header class="site-header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="lifeison.png" alt="Schneider Electric Logo">
         </div>
-        <div class="logo-section">
-            <img src="" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">Hjem</a></li>
-                    <li><a href="#about">Om</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Søg...">
+            <button><img src="search.png" alt="Søg"></button>
         </div>
-    </header>
+        <div class="impact-logo">
+            <img src="images 4.png" alt="Impact Company Logo">
+        </div>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Løsninger</a></li>
+        <li><a href="#" class="active">Support</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+    </nav>
+</header>
 
 <!-- START INFO -->
 
@@ -83,17 +92,151 @@
             
             Ved at vælge "Ja" og trykke på tilmeld giver du samtykke til, at du  modtager nyhedsbreve om produkter, serviceydelser, kurser og  arrangementer via e-mails fra Schneider Electric Danmark A/S (herunder  Schneider Electric IT Denmark ApS, Lauritz Knudsen og Proface). Du kan  til enhver tid trække dit samtykke tilbage og afmelde nyhedsbreve.  Behandling af dine personoplysninger sker i overensstemmelse med vores  privatlivspolitik med Schneider Electric Danmark A/S, CVR 70698714,  Lautrupvang 1, 2750 Ballerup, tlf. nr. +45 35 15 90 00 som  dataansvarlig. <span class="links">Læs vores privatlivspolitik.</span></p>
 
+              <!-- JA OG NEJ -->
+
                 <input type="radio" id="ja" name="valg" value="ja">
                 <label for="ja">nej</label><br>
                 <input type="radio" id="nej" name="valg" value="nej">
                 <label for="nej">ja</label><br>
         </form> 
               <img class="human"  src="billeder/human.png" alt="verificer">
-              <input class="form-submit" type="submit" value="Send">
-         
-        
-        </div>
 
+              <!-- SEND KNAP -->
+              <input class="form-submit" type="submit" value="Send">        
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Produkter</h3>
+                <ul>
+                    <li>Produktdokumentation</li>
+                    <li>Download af software</li>
+                    <li>Produktvælger</li>
+                    <li>Udskiftning og erstatning af produkter</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li>Kontakt support</li>
+                    <li>Find vores kontorer<span class="arrow">↗</span></li>
+                    <li>Har du brug for hjælp? start her</li>
+                    <li>Få et tilbud</li>
+                    <li>Find forhandler</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Virksomhed</h3>
+                <ul>
+                    <li>Karriere</li>
+                    <li>Virksomhedsprofil</li>
+                    <li>Presseum</li>
+                    <li>Investorer<span class="arrow">↗</span></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hurtige links</h3>
+                <ul>
+                    <li>Ecostruxure</li>
+                    <li>Jobsøgning<span class="arrow">↗</li>
+                    <li>Registrer dit produkt</li>
+                    <li>Blog<span class="arrow">↗</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Partnere</h3>
+                <ul>
+                    <li>Bæredygtighed</li>
+                    <li>Events</li>
+                    <li>Indsigt<span class="arrow">↗</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-subscription">
+            <p class="subscription-header">Få månedlige opdateringer fra Schneider Electric leveret til din indbakke</p>
+            <form>
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Jeg er ...">
+                <button type="submit">Tilmeld</button>
+            </form>
+            <p class="subscription-text">Jeg vil gerne modtage nyheder og marketingkommunikation fra Schneider Electric og dets associerede selskaber via elektroniske kanaler som f.eks. e-mail, og jeg accepterer indsamling af oplysninger om åbning og klik i disse e-mails (ved hjælp af usynlige pixel i billederne) for at måle effektiviteten af vores kommunikation og forbedre den. Læs vores privatlivspolitik.</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Privatlivspolitik</a>
+                <a href="#">Cookiemeddelelse</a>
+                <a href="#">Vilkår for anvendelse</a>
+                <a href="#">Rediger dine cookieindstillinger</a>
+            </div>
+            <div class="footer-social-impact">
+                <div class="impact-logo">
+                    <img src="images 4.png" alt="Impact Company Logo">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="linkind.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="x.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <!-- CHAT BOT -->
+
+      <div id="chat-icon" class="chat-icon">
+        <img src="billeder/chatbot.png" alt="Chat Icon">
+    </div>
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <span>B2B Support</span>
+            <button id="close-chat" class="close-btn">&times;</button>
+        </div>
+        <div class="chat-body">
+            <button id="start-chat" class="start-chat-btn">Snak med os</button>
+            <div id="chat-options" class="chat-options">
+                <ul>
+                    <li><a href="#">Produktvælger</a></li>
+                    <li><a href="#">Produktsubstitution</a></li>
+                    <li><a href="#">Ofte stillede spørgsmål</a></li>
+                    <li><a href="#">Dokument og software download</a></li>
+                </ul>
+                <div class="order-inquiry">
+                    <p>Spørgsmål om din ordre?</p>
+                    <button class="login-btn">Log på</button>
+                    <p>Opret en konto i dag til personlig support med vores team af eksperter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <span>B2B Support</span>
+            <button id="close-chat-window" class="close-btn">&times;</button>
+        </div>
+        <div class="chat-messages">
+            <div class="message">
+                <div class="message-sender">Kundesupport</div>
+                <div class="message-text">Hej hvordan kan jeg hjælpe dig?</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-sender">Dig</div>
+                <div class="message-text">Har et problem med FUGA</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-sender">Dig</div>
+                <div class="message-text">Hvor mange watt kan det klare?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-field" placeholder="Skriv en besked...">
+            <button id="send-chat-btn">Send</button>
+        </div>
+    </div>
 
 </body>
 </html>
+
