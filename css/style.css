@@ -1,5 +1,21 @@
+@font-face {
+    font-family: 'ARIALROUNDEDMT';
+    src: url('../fonts/ARIALROUNDEDMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ARIALROUNDEDMTEXTRABOLD';
+    src: url('../fonts/ARIALROUNDEDMTEXTRABOLD.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'ARIALROUNDEDMT', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,7 +55,7 @@ body {
 }
 
 .search-bar input {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
@@ -92,6 +108,7 @@ body {
 }
 
 .hero {
+    font-family: 'Arial Rounded MT', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,10 +123,12 @@ body {
 }
 
 .hero h1 {
+    font-family: 'Arial Rounded MT', sans-serif;
     font-size: 36px;
 }
 
 .hero p {
+    
     font-size: 18px;
     margin: 20px 0;
 }
@@ -257,6 +276,43 @@ body {
     color: #333;
 }
 
+/* GIRD */
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Mellemrum mellem kasserne */
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* FOOTER */
+
 .site-footer {
     background-color: #333;
     color: #fff;
@@ -384,3 +440,152 @@ body {
 .impact-logo img {
     height: 40px;
 }
+
+/* CHAT BOT START */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.chat-popup, .chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-header span {
+    font-weight: bold;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-body, .chat-messages {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.start-chat-btn, .login-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.start-chat-btn:hover, .login-btn:hover {
+    background-color: #45a049;
+}
+
+.chat-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chat-options ul li {
+    margin: 10px 0;
+}
+
+.chat-options ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.chat-options ul li a:hover {
+    text-decoration: underline;
+}
+
+.order-inquiry {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.message-text {
+    background-color: #e9e9e9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.user-message .message-text {
+    background-color: #d1ecf1;
+}
+
+.user-message .message-sender {
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#chat-input-field {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-chat-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-chat-btn:hover {
+    background-color: #45a049;
+}
+
