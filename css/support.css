@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'ARIALROUNDEDMT';
+    src: url('../fonts/ARIALROUNDEDMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ARIALROUNDEDMTEXTRABOLD';
+    src: url('../fonts/ARIALROUNDEDMTEXTRABOLD.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'ARIALROUNDEDMT', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'ARIALROUNDEDMT', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.top-bar {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 0;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.top-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
+    background-image: url('by.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.feature {
+    text-align: center;
+}
+
+.features img {
+    width: 50px;
+}
+
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product img {
+    width: 100px;
+}
+
+.important-links {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.textbox {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15rem;
+    margin-top: 7rem;
+}
+
+.intro {
+    font-family: 'Arial Rounded MT', sans-serif;
+    margin-bottom: 0;
+    font-size: 40px;
+    text-align: left;
+}
+
+.liste {
+    font-family: 'Arial Rounded MT', sans-serif;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.liste li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.green {
+    color: #30DA67;
+}
+
+.flue{
+    color: #30DA67;
+}
+
+.happy{
+    display: inline-block;
+    margin-left: 10rem;
+}
+
+.right-content {
+    margin-left: 10rem;
+}
+
+.left-content {
+    width: 60%; /* Juster denne værdi efter behov */
+}
+
+
+.top-image {
+    margin-left:32rem;
+    padding-bottom: 53rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rto {
+    width: 270px;
+    height: 60px;
+    background-color: #008A16;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 10px; /* Dette vil give knappen afrundede hjørner */
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    width: 100%; 
+    position: relative; 
+    margin-top: -50rem; 
+    z-index: 0;
+}
+
+.form-container {
+    font-family: 'ARIALROUNDEDMT', sans-serif;
+    width: 971px;
+    height: 1712px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 185%; /* Juster denne værdi for at flytte formen ned */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 20px;
+}
+
+.lov {
+    line-height: 1.5; /* Juster denne værdi efter behov */
+}
+
+  
+.form-field {
+    width: calc(100% - 20px); /* Tilføjet denne linje */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Tilføjet denne linje */
+}
+
+  
+  .form-submit {
+    width: 934px;
+    height: 61px;
+    padding: 0; /* Fjern padding for at kontrollere højden præcist */
+    background: #008A16;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 61px; /* For at centrere teksten lodret */
+    cursor: pointer;
+}
+
+.links{
+    color: #6F12E4 ;
+    text-decoration: underline;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid darkgray;
+    border-radius: 50%; /* Gør knapperne runde */
+    outline: none;
+    box-shadow: 0 0 5px gray;
+    transition: box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+input[type='radio']:checked {
+    box-shadow: 0 0 5px #3DCD58;
+    border-radius: 50%; 
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 100%; 
+}
+
+input[type='radio']:checked:before {
+    background: #3DCD58;
+    border-radius: 100%; 
+}
+
