@@ -24,6 +24,10 @@ p{
     font-family: 'ARIALROUNDEDMT', sans-serif;
 }
 
+img{
+    width: 100%;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -131,8 +135,8 @@ p{
 .textbox {
     display: flex;
     justify-content: space-between;
-    margin-left: 15rem;
-    margin-top: 7rem;
+    width: 100%;
+ 
 }
 
 .intro {
@@ -169,7 +173,7 @@ p{
 }
 
 .right-content {
-    margin-left: 10rem;
+    position: relative;
 }
 
 .left-content {
@@ -178,11 +182,11 @@ p{
 
 
 .top-image {
-    margin-left:32rem;
-    padding-bottom: 53rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    position: absolute;
+    left: 0;
+    max-width: 100px;
+ 
 }
 
 .rto {
@@ -205,7 +209,7 @@ p{
 
 
 /* BG */
-.bg {
+/* .bg {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -214,22 +218,26 @@ p{
     position: relative; 
     margin-top: -50rem; 
     z-index: 0;
-}
+} */
 
 .form-container {
     font-family: 'ARIALROUNDEDMT', sans-serif;
-    width: 971px;
-    height: 1560px;
-    background: white;
+    background-image: url("../billeder/bg.png");
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;   
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
-    position: absolute;
-    top: 178%; /* Juster for at flytte formen op og ned */
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
-    margin: 20px;
+}
+
+.form-container > form{
+    max-width: 600px;
+    background: white;
+    padding: 3rem;
+    border-radius: 10px
 }
 
 
@@ -249,8 +257,8 @@ p{
 
   
   .form-submit {
-    width: 934px;
-    height: 61px;
+    width: 100%;
+    margin-top: 3rem;
     padding: 0; 
     background: #008A16;
     color: white;
@@ -364,6 +372,7 @@ footer{
 
 .footer-subscription form {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 10px;
 }
@@ -374,7 +383,7 @@ footer{
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    width: 200px;
+    max-width: 200px;
 }
 
 .footer-subscription button {
@@ -399,6 +408,7 @@ footer{
 
 .footer-bottom {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -434,6 +444,7 @@ footer{
 .footer-social {
     margin-top: 30px; /* Add margin to position 30px below the Impact logo */
     display: flex;
+    flex-direction: column;
     gap: 10px; /* Adjust gap between social icons */
 }
 
@@ -590,4 +601,76 @@ body {
 #send-chat-btn:hover {
     background-color: #45a049;
 }
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
 
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 1110px) {
+    .navigation {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-content{
+        width: 100%;
+       
+
+    }
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textbox {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right-content{
+        margin-top: 20px;
+      
+    }
+    .top-image{
+        width: 25%;
+        
+    }
+
+    .site-footer .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-container
+    {
+        width: 100%;
+        
+    }
+}
