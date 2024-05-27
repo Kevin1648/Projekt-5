@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="da">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Hjemmeside</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="w.ico" type="image/x-icon">
     <script src="chat.js" defer></script>
+    <script src="../P5/css/menu.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -21,15 +22,20 @@
             <div class="impact-logo">
                 <img src="billeder/images4.png" alt="Impact Company Logo">
             </div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </div>
         </div>
-        <nav class="navigation">
-          <ul>
-            <li><a href="#">Produkter</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Løsninger</a></li>
-            <li><a href="#" class="active">Support</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+        <nav class="navigation" id="navigation">
+            <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Løsninger</a></li>
+                <li><a href="#" class="active">Support</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -40,7 +46,9 @@
         </section>
         <section class="features">
             <div class="feature">
-                <img src="billeder/Group75.png" alt="Ikon 1">
+                <a href="support.html">
+                <img src="billeder/Group75.png" alt="Kunderser">
+            </a>
             </div>
             <div class="feature">
                 <img src="billeder/Group66.png" alt="Ikon 2">
@@ -102,7 +110,6 @@
             </div>
         </section>
 
-        <!-- GRID -->
         <section class="grid-layout">
             <div class="grid-item" style="background-image: url('billeder/Group20.png');">
                 <span>Bæredygtighed</span>
@@ -123,8 +130,6 @@
                 <span>Datacentre</span>
             </div>
         </section>
-
-
     </main>
     <footer class="site-footer">
         <div class="footer-top">
@@ -204,9 +209,9 @@
         </div>
     </footer>
 
-     <!-- CHAT BOT -->
+    <!-- CHAT BOT -->
 
-     <div id="chat-icon" class="chat-icon">
+    <div id="chat-icon" class="chat-icon">
         <img src="billeder/chatbot.png" alt="Chat Icon">
     </div>
     <div id="chat-popup" class="chat-popup">
@@ -234,7 +239,7 @@
     <div id="chat-window" class="chat-window">
         <div class="chat-header">
             <span>B2B Support</span>
-            <button id="close-chat-window" class="close-btn">&times;</button>
+            <button id="close-chat-window" class="close-btn">&times;"></button>
         </div>
         <div class="chat-messages">
             <div class="message">
