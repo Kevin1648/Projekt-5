@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/support.css">
     <link rel="icon" href="w.ico" type="image/x-icon">
     <script src="chat.js" defer></script>
+    <script src="../P5/css/menu.js" defer></script>
 </head>
 <body>
 
@@ -24,8 +25,13 @@
         <div class="impact-logo">
             <img src="billeder/images4.png" alt="Impact Company Logo">
         </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
     </div>
-    <nav class="navigation">
+    <nav class="navigation" id="navigation">
       <ul>
         <li><a href="#">Produkter</a></li>
         <li><a href="#">Services</a></li>
@@ -60,9 +66,9 @@
 
 <!-- BAGGRUNDS BILLEDE -->
 
-    <div class="background-section">
+    <!-- <div class="background-section">
         <img class="bg" src="billeder/bg.png" alt="Baggrundsbillede">
-    </div>
+    </div> -->
     
 <!-- FORM -->
 
@@ -98,11 +104,14 @@
                 <label for="ja">nej</label><br>
                 <input type="radio" id="nej" name="valg" value="nej">
                 <label for="nej">ja</label><br>
-        </form> 
-              <img class="human"  src="billeder/human.png" alt="verificer">
 
+
+                <input class="form-submit" type="submit" value="Send">  
+        </form> 
+            <!--   <img class="human"  src="billeder/human.png" alt="verificer">
+ -->
               <!-- SEND KNAP -->
-              <input class="form-submit" type="submit" value="Send">        
+                  
       </div>
 
       <!-- FOOTER -->
