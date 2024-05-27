@@ -107,11 +107,6 @@ body {
     border-bottom: 4px solid #30DA67;
 }
 
-
-.navigation ul li a.active {
-    border-bottom: 4px solid #30DA67;
-}
-
 .hero {
     font-family: 'Arial Rounded MT', sans-serif;
     display: flex;
@@ -179,9 +174,7 @@ body {
     align-items: center;
 }
 
-.products-header h2 {
-    margin: 0;
-}
+
 
 .view-all-products {
     margin-top: 20px;
@@ -208,17 +201,6 @@ body {
     display: flex;
     gap: 100px;
     flex: 3;
-}
-
-.product-item {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    padding: 50px;
-    text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-    overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
 .product-item:hover {
@@ -359,7 +341,7 @@ body {
 .footer-subscription {
     text-align: left;
     padding: 20px 0;
-    max-width: 600px; /* Sæt en breddebegrænsning */
+    max-width: 1200px; /* Sæt en breddebegrænsning */
 }
 
 .footer-subscription .subscription-header {
@@ -595,3 +577,321 @@ body {
     background-color: #45a049;
 }
 
+/* Existing CSS Code */
+
+@media screen and (max-width: 1110px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navigation ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .features img {
+        width: 100%;
+    }
+
+    .products-content {
+        flex-direction: row;
+    }
+
+    .products-list {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-subscription {
+        padding: 10px;
+    }
+
+    .footer-subscription form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-subscription input[type="email"],
+    .footer-subscription input[type="text"],
+    .footer-subscription button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-social-impact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chat-popup, .chat-window {
+        width: 90%;
+        bottom: 60px;
+    }
+
+    .chat-input {
+        flex-direction: column;
+    }
+
+    #chat-input-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .start-chat-btn, .login-btn {
+        width: 100%;
+    }
+}
+
+/* Specific adjustments for 400px width */
+@media screen and (max-width: 400px) {
+    .hero {
+        height: 600px; /* Increase height for the hero section */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 1110px) {
+    .navigation {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navigation ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .features img {
+        width: 100%;
+    }
+
+    .products-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .products-header{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .view-all-products{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-subscription {
+        padding: 10px;
+    }
+
+    .footer-subscription form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-subscription input[type="email"],
+    .footer-subscription input[type="text"],
+    .footer-subscription button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-social-impact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chat-popup, .chat-window {
+        width: 90%;
+        bottom: 60px;
+    }
+
+    .chat-input {
+        flex-direction: column;
+    }
+
+    #chat-input-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .start-chat-btn, .login-btn {
+        width: 100%;
+    }
+}
+
+/* Specific adjustments for 400px width */
+@media screen and (max-width: 400px) {
+    .hero {
+        height: 600px; /* Increase height for the hero section */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
