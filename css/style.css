@@ -729,6 +729,13 @@ body {
     background-color: #333;
     margin: 4px 0;
 }
+.nav-item {
+    display: none;
+}
+
+.open .nav-item {
+    display: block;
+}
 
 @media screen and (max-width: 1110px) {
     .navigation {
