@@ -31,20 +31,20 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    padding: 0; /* Ensure no padding around the header container */
+    padding: 0; 
 }
 
 .logo {
-    margin: 0; /* Remove any margin around the logo */
-    display: flex; /* Ensure the logo is aligned to the left */
-    align-items: center; /* Align items vertically center */
+    margin: 0; 
+    display: flex; 
+    align-items: center; /
 }
 
 .logo img {
     height: 60px;
-    margin: 0; /* Ensure no margin around the image */
-    padding: 0; /* Ensure no padding around the image */
-    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0; 
+    padding: 0; 
+    display: block; 
 }
 
 .search-bar {
@@ -106,41 +106,111 @@ body {
 .navigation ul li a:hover {
     border-bottom: 4px solid #30DA67;
 }
+/* SLUT */
 
-.hero {
-    font-family: 'Arial Rounded MT', sans-serif;
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slides {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px; /* Increase the height */
-    background-image: url(../billeder/by.jpg);
-    background-size: cover;
-    background-position: center;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; 
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    z-index: -1; /* Det sikre at billedet er baggest læs op på */
+}
+
+.caption {
+    text-align: center; 
     color: white;
-    text-align: center;
-    padding: 20px;
+    z-index: 1; /* Det sikre at titlen er over billedet læs op på */
 }
 
-.hero h1 {
-    font-family: 'Arial Rounded MT', sans-serif;
-    font-size: 36px;
+.download-btn, .visit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
 }
 
-.hero p {
-    
-    font-size: 18px;
-    margin: 20px 0;
+.visit-btn {
+    background-color: transparent;
+    border: 1px solid white;
 }
 
-.hero button {
-    background-color: #28a745;
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px;
     cursor: pointer;
+    z-index: 1; /* Det sikre at dots er over billedet læs op på */
 }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    z-index: 1; /* Det sikre at dots er over billedet læs op på */
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, width 0.3s, height 0.3s; 
+}
+
+.dot.active {
+    background-color: green;
+    width: 12px; 
+    height: 12px; 
+}
+
+/* SLUT */
 
 .features {
     display: flex;
