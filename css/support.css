@@ -170,15 +170,19 @@ img{
 .happy{
     display: inline-block;
     margin-left: 10rem;
+
 }
 
 .right-content {
     position: relative;
+    margin-right: 50px;
 }
 
 .left-content {
-    width: 60%; /* Juster denne værdi efter behov */
+    width: 50%; 
+    margin-left: 50px;
 }
+
 
 
 .top-image {
@@ -206,19 +210,6 @@ img{
 
 /* LANDING PAGE SLUT */
 
-
-
-/* BG */
-/* .bg {
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    height: 1700px; 
-    width: 100%; 
-    position: relative; 
-    margin-top: -50rem; 
-    z-index: 0;
-} */
 
 .form-container {
     font-family: 'ARIALROUNDEDMT', sans-serif;
@@ -315,10 +306,6 @@ input[type='radio']:checked:before {
 
 /* FOOTER */
 
-footer{
-    font-family: 'Arial Rounded MT', sans-serif;
-}
-
 .site-footer {
     background-color: #333;
     color: #fff;
@@ -343,7 +330,6 @@ footer{
 }
 
 .footer-column ul li {
-    font-family: 'Arial Rounded MT', sans-serif;
     margin-bottom: 15px; /* Øg mellemrummet endnu mere */
     font-size: 14px;
     cursor: pointer;
@@ -361,18 +347,16 @@ footer{
 .footer-subscription {
     text-align: left;
     padding: 20px 0;
-    max-width: 600px; /* Sæt en breddebegrænsning */
+    max-width: 1200px; /* Sæt en breddebegrænsning */
 }
 
 .footer-subscription .subscription-header {
-    font-family: 'Arial Rounded MT', sans-serif;
     margin-bottom: 10px;
     font-size: 16px;
 }
 
 .footer-subscription form {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 10px;
 }
@@ -383,7 +367,7 @@ footer{
     margin-right: 10px;
     border: none;
     border-radius: 5px;
-    max-width: 200px;
+    width: 200px;
 }
 
 .footer-subscription button {
@@ -399,6 +383,7 @@ footer{
     background-color: #008A16;
 }
 
+
 .footer-subscription .subscription-text {
     font-size: 12px;
     color: #ccc;
@@ -408,7 +393,6 @@ footer{
 
 .footer-bottom {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -444,13 +428,13 @@ footer{
 .footer-social {
     margin-top: 30px; /* Add margin to position 30px below the Impact logo */
     display: flex;
-    flex-direction: column;
     gap: 10px; /* Adjust gap between social icons */
 }
 
 .impact-logo img {
     height: 40px;
 }
+
 
 /* FOOTER SLUT */
 
@@ -644,4 +628,59 @@ body {
         width: 100%;
         
     }
+
+    .footer-top {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    
+    .footer-subscription {
+        padding: 10px;
+    }
+    
+    .footer-subscription form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-subscription input[type="email"],
+    .footer-subscription input[type="text"],
+    .footer-subscription button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .footer-social-impact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .chat-popup, .chat-window {
+        width: 90%;
+        bottom: 60px;
+    }
+    
+    .chat-input {
+        flex-direction: column;
+    }
+    
+    #chat-input-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .start-chat-btn, .login-btn {
+        width: 100%;
+    }
+    
+
+
 }
