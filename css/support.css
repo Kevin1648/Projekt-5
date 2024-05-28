@@ -601,33 +601,6 @@ body {
 #send-chat-btn:hover {
     background-color: #45a049;
 }
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.burger-bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-}
-
-@media screen and (max-width: 1110px) {
-    .navigation {
-        display: none;
-    }
-
-    .burger-menu {
-        display: flex;
-    }
-
-    .navigation.open {
-        display: block;
-    }
-}
 
 @media (max-width: 768px) {
     .header-container {
@@ -637,8 +610,7 @@ body {
 
     .left-content{
         width: 100%;
-       
-
+        margin-top: 20px;
     }
     .content {
         flex-direction: column;
@@ -652,11 +624,10 @@ body {
 
     .right-content{
         margin-top: 20px;
-      
+        width: 100%;
     }
     .top-image{
-        width: 25%;
-        
+        width: 100%;
     }
 
     .site-footer .footer-top {
