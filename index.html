@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Hjemmeside</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="w.ico" type="image/x-icon">
-    <script src="../P5/javascript/chat.js" defer></script>
-    <script src="../P5/javascript/menu.js" defer></script>
+    <link rel="icon" href="billeder/w.ico" type="image/x-icon">
+    <script src="javascript/chat.js" defer></script>
+    <script src="javascript/menu.js" defer></script>
+    <script src="javascript/slide.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <div class="header-container">
             <div class="logo">
-                <img src="billeder/lifeison.png" alt="Schneider Electric Logo">
+                <a href="index.html"><img src="billeder/lifeison.png" alt="Schneider Electric Logo"></a>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="Søg...">
@@ -33,17 +34,49 @@
                 <li class="nav-item"><a href="#">Produkter</a></li>
                 <li class="nav-item"><a href="#">Services</a></li>
                 <li class="nav-item"><a href="#">Løsninger</a></li>
-                <li class="nav-item"><a href="#" >Support</a></li>
+                <li class="nav-item"><a href="support.html" class="active">Support</a></li>
                 <li class="nav-item"><a href="#">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1>LK FUGA® Inspirationskatalog</h1>
-            <p>Find LK FUGA® inspirationskataloger og download dem gratis.</p>
-            <button>Download katalog</button>
-        </section>
+
+        <!-- SLIDER -->
+             <!-- SLIDER -->
+             <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="billeder/by.jpg" alt="Slide 1">
+                        <div class="caption">
+                            <h1>LK FUGA® Inspirationskatalog</h1>
+                            <p>LK FUGA® er verdensklasse design, der er skabt til at blive brugt!</p>
+                            <a href="#" class="download-btn">Download LK FUGA® Inspirationskatalog</a>
+                            <a href="#" class="visit-btn">Besøg lk.dk</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="billeder/innovation.jpg" alt="Slide 2">
+                        <div class="caption">
+                            <h1>Innovation på alle niveauer</h1>
+                            <p>LK FUGA® er verdensklasse design, der er skabt til at blive brugt!</p>
+                            <a href="#" class="download-btn">Se vores løsninger</a>
+                            <a href="#" class="visit-btn">Besøg lk.dk</a>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+     <!-- SLIDER SLUT -->
+
+
         <section class="features">
             <div class="feature">
                 <a href="support.html">
