@@ -28,4 +28,5 @@
      
         navigation.classList.toggle('open');
     });
+    
 };
